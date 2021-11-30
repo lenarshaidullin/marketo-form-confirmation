@@ -1,0 +1,25 @@
+<div class="container">
+
+  <script src="//go.group-ib.com/js/forms2/js/forms2.min.js"></script>
+    <form id="mktoForm_4779"></form>
+  <script>MktoForms2.loadForm("//go.group-ib.com", "689-LRE-818", 4779);</script>
+
+  <div id="confirmation" aria-hidden="true" style="display:none;">
+    <div class="">
+      <p>Спасибо, мы свяжемся с Вами в самое ближайшее время.</p>
+    </div>
+  </div>
+
+  <script>
+    MktoForms2.whenReady(function (form){
+      form.onSuccess(function(vals, page){
+        form.getFormElem().hide();
+        var confirm = document.getElementById('confirmation');
+        confirm.style.display = 'inline-block';
+        confirm.setAttribute('aria-hidden', false);
+        return false;
+      });
+    });
+  </script>
+
+</div>
